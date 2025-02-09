@@ -1,0 +1,76 @@
+# Yocto Build Directories
+build*/
+tmp/
+sstate-cache/
+cache/
+downloads/
+
+# BitBake output files
+*.pyc
+*.pyo
+*.swp
+*.orig
+*~
+*.log
+*.log.*
+
+# Configuration files (per developer, should not be shared)
+conf/local.conf
+conf/bblayers.conf
+conf/templateconf.cfg
+
+# Build output (images, SDKs, packages)
+deploy/
+*.wic
+*.wic.bz2
+*.iso
+*.vmdk
+*.vdi
+*.qcow2
+*.tar.bz2
+*.tar.gz
+*.ext4
+*.squashfs
+*.ubi
+*.rootfs.*
+*.dtb
+
+# Patch reject files
+*.rej
+
+# Shared state files (redundant as sstate-cache/ is ignored)
+sstate-cache/
+*.swp
+
+# Downloaded source archives (already ignored above)
+downloads/
+
+# Python virtual environment
+.venv/
+venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+.project
+.settings/
+.pydevproject
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary/backup files
+*.bak
+*.tmp
+*.temp
+
+# Git metadata files (should not be ignored)
+!.gitignore
+!.gitattributes
